@@ -6,6 +6,8 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\User;
 use App\Models\Role;
+
+
 class Accounts extends Component
 {
     public $enabledExpandView = [];
@@ -27,7 +29,9 @@ class Accounts extends Component
             $this->tempIndex = $this->viewIndex;
         }     
         //$users = User::paginate(10);
+
         $users = User::orderBy('name', 'ASC')->paginate(10);
+
         if($this->pageNumber != $users->currentPage()){
             foreach($users as $index => $user){
                 $this->enabledExpandView[$index] = null;
@@ -42,6 +46,8 @@ class Accounts extends Component
     public function mount(){
         $this->addAccountEnable = false;
         $this->viewEnable = false;
+
+        // dd(User::orderBy('name', 'ASC')->paginate(10));
     }
     public function expandView($viewIndex, $accountId){
         $this->viewIndex = $viewIndex;

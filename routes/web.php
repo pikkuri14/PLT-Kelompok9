@@ -43,5 +43,7 @@ Route::get('/menu', \App\Http\Livewire\menu\Idx::class)->name('menu.idx');
 
 //PLT
 Route::get('/plt/landing-page', \App\Http\Livewire\Plt\Idx::class)->name('plt.home');
+Route::get('/mark/idx', \App\Http\Livewire\Mark\Idx::class)->name('mark.idx');
+Route::get('/pengumuman/idx', \App\Http\Livewire\Pengumuman\Idx::class)->name('pengumuman.idx');
 
 

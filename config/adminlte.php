@@ -254,6 +254,21 @@ return [
             'icon'      => 'far fa-fw fa-file',
             //'roles'     => ['reviewer', 'committee','author'],
         ],
+
+        [
+            'text'       => 'Mark Of Final Defense',
+            'route'      => 'mark.idx',
+            'icon'      => 'far fa-fw fa-file',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
+
+        [
+            'text'       => 'pengumuman',
+            'route'      => 'pengumuman.idx',
+            'icon'      => 'far fa-fw fa-file',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
+
         [
             'text'       => 'Log out',
             'route'        => 'user.refresh',

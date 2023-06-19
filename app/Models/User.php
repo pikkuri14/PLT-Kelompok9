@@ -10,6 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 use Laratrust\Traits\LaratrustUserTrait;
 use App\Models\ArSys\Student;
 use App\Models\ArSys\Staff;
+
 class User extends Authenticatable
 {
     use LaratrustUserTrait;

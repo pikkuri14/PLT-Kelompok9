@@ -10,11 +10,13 @@ class Add extends Component
     public function render(){
         return view('livewire.plt.announcement.add');
     }
+    
     public function save(){
         Announcement::create([
             'title' => $this->title,
             'body' => $this->body,
         ]);
+
         $this->title = '';
         $this->body = '';
         $this->emit('refresh_Announcement_List');
